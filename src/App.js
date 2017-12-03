@@ -19,11 +19,9 @@ class App extends Component {
     if (this.state.loadedComponents.includes(viewName)) return;
 
     console.log(`Loading ${viewName} view...`);
-    
+
     import(`./views/${viewName}.js`)
       .then(Component => {
-        console.log("Component.default", Component.default, this.props.data);
-
         this.setState({
           loadedComponents: this.state.loadedComponents.concat(viewName),
           components: this.state.components.concat(
@@ -35,8 +33,6 @@ class App extends Component {
         });
       })
       .catch(error => {
-        console.log(`${viewName} is not loaded...`);
-
         this.setState({
           loadedComponents: this.state.loadedComponents.concat(viewName),
           components: this.state.components.concat(
