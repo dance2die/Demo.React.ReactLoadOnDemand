@@ -3,5 +3,5 @@
 When a user clicks on a button, a new component is `imported` on demand
 
 
-https://www.slightedgecoder.com/2017/12/03/loading-react-components-dynamically-demand/#case3
+https://www.slightedgecoder.com/2017/12/03/loading-react-components-dynamically-demand/#case2
 
